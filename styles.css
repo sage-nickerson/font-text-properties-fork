@@ -1,7 +1,7 @@
 /* 
     ---------------------------------------------------------------
     Add your name to this file below:
-    NAME: 
+    NAME: Sage Nickerson
     ---------------------------------------------------------------
 */
 
@@ -23,14 +23,19 @@
     --dk-gray: #222;
 
     /* Font Stacks */
-    /* add the two font stacks here */
+	
+	
 }
 
 body{
 	/* set the font family to Lato, Arial, sans-serif (--body-fonts) */
+	font-family: var(--body-fonts);
 	/* Set the line height to 1.5 */
+	line-height: 1.5;
 	/* set the font size to 1.1rem	*/
+	font-size: 1.1rem;
 	/* set the font color to #222 (--dk-gray) */
+	color: var(--dk-gray)
 	margin: 0;
 	padding: 0;
 }
@@ -43,9 +48,9 @@ header{
 }
 
 h1, h2, h3{
-	/* center align the text */
-	/* use a web font here (instructions on page) */
-	/* make the heading text all small caps style */
+	text-align: center;
+	font-family: Manrope;
+	font-variant: small-caps;
 }
 
 h2{
@@ -57,6 +62,7 @@ h2{
 h3{
 	margin: 0;
 	padding: 4px;
+	text-decoration: underline var(--mint);
 	/* add an underline like the one on the h2s to the h3s, but make it solid and mint color */
 }
 
@@ -72,13 +78,19 @@ nav ul{
 
 nav a{
 	/* make these display as block level elements */
+	display: block;
 	margin: 1rem auto;
 	padding: 1rem;
 	background-color: var(--tiffany);
+	color: var(--dk-gray);
 	/* set the font color to #222 (--dk-gray) */
+	text-align: center;
 	/* center align the text */
+	text-decoration: none;
 	/* remove the underline */
+	font-size: 1.2rem;
 	/* make the font's size 1.2rem */
+	font-weight: 600;
 	/* make the font bolder (600) */
 }
 
@@ -101,8 +113,11 @@ section{
 
 p{
 	/* set a max-width of 55 characters */
+	max-width: 50ch;
 	/* add an indent on the first line of 2rem */
+	text-indent: 2rem;
 	/* center those paragraphs (not the text) on the page */
+	margin: 0 auto;
 	padding: 0.5rem;
 }
 
@@ -116,11 +131,13 @@ a:hover{
 
 dl, ol, main ul{
 	/* limit the width of these lists to 55 characters */
+	max-width: 55ch;
 	margin: 1rem auto;
 }
 
 dt{
 	/* make this font display in bold weight */
+	font-weight: bold;
 }
 
 dt::before{
